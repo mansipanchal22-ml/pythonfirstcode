@@ -1,0 +1,291 @@
+Step 2: Verify Installation
+
+Open Command Prompt or PowerShell and type:
+
+git --version
+git version 2.50.1.windows.1
+
+
+Step 3: Configure Git
+git config --global user.name "Mansi Panchal"
+git config --global user.email "mansi@example.com"
+
+Step 4: Check Configuration
+git config --list
+
+Q.3 Create a GitHub Repository
+Step 1
+
+Login to GitHub.
+
+Step 2
+
+Click New Repository.
+
+Step 3
+
+Enter:
+
+Repository Name:
+my-first-repo
+Description:
+My First GitHub Repository
+
+Choose:
+
+Public ✅
+or
+Private ✅
+Step 4
+
+✔ Tick
+
+Add a README file
+Step 5
+
+Click
+
+Create Repository
+
+Repository is now created successfully.
+
+Q.4 Push Local Project to GitHub
+
+Open Terminal inside your project folder.
+
+Initialize Git
+git init
+Add all files
+git add .
+Commit
+git commit -m "Initial Commit"
+Connect GitHub Repository
+git remote add origin https://github.com/USERNAME/my-first-repo.git
+
+Replace USERNAME with your GitHub username.
+
+Push Files
+git branch -M main
+git push -u origin main
+
+Refresh GitHub.
+
+Your project files will appear in the repository.
+
+Q.5 Pull from GitHub
+
+Clone the repository (if not already available):
+
+git clone https://github.com/USERNAME/my-first-repo.git
+
+Go inside the repository:
+
+cd my-first-repo
+
+Suppose someone updated the repository on GitHub.
+
+To download the latest changes:
+
+git pull origin main
+Verify
+
+Check the updated files:
+
+git status
+
+If everything is updated:
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Viva Questions (Important)
+
+Q1. How to check Git version?
+
+git --version
+
+Q2. Initialize a Git repository?
+
+git init
+
+Q3. Add all files?
+
+git add .
+
+Q4. Commit changes?
+
+git commit -m "message"
+
+Q5. Push code to GitHub?
+
+git push origin main
+
+Q6. Pull latest changes?
+
+git pull origin main
+
+Q7. Check Git configuration?
+
+git config --list
+
+
+
+નીચે **Q.1 થી Q.11** ના સરળ અને પરીક્ષાલક્ષી જવાબો આપેલા છે.
+
+---
+
+### Q.1 What is GitHub, and how does it differ from Git?
+
+**Answer:**
+
+* **Git** is a Version Control System used to track changes in source code.
+* **GitHub** is a cloud-based platform that hosts Git repositories and allows developers to collaborate online.
+
+**Difference:**
+
+| Git                 | GitHub                             |
+| ------------------- | ---------------------------------- |
+| Software            | Online Platform                    |
+| Works locally       | Works on the cloud                 |
+| Tracks code changes | Stores and shares Git repositories |
+
+---
+
+### Q.2 Why is GitHub widely used in software development and collaboration?
+
+**Answer:**
+
+GitHub is widely used because it:
+
+* Stores code online.
+* Allows multiple developers to work together.
+* Tracks changes using Git.
+* Maintains version history.
+* Supports pull requests and code reviews.
+* Provides backup of projects.
+
+---
+
+### Q.3 What is Git, and why must it be installed before using GitHub?
+
+**Answer:**
+
+Git is a distributed version control system that tracks changes in files and source code.
+
+It must be installed because GitHub uses Git commands (such as `git add`, `git commit`, and `git push`) to upload and manage code from a local computer.
+
+---
+
+### Q.4 What are the basic steps involved in installing Git on Windows, macOS, or Linux?
+
+**Answer:**
+
+1. Download Git from **[https://git-scm.com](https://git-scm.com)**.
+2. Install using the default settings.
+3. Open Terminal or Command Prompt.
+4. Verify installation using:
+
+```bash
+git --version
+```
+
+5. Configure Git:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+
+---
+
+### Q.5 What information is required to create a GitHub account?
+
+**Answer:**
+
+To create a GitHub account, you need:
+
+* Email Address
+* Username
+* Password
+* Email Verification
+
+(Optional)
+
+* Profile Picture
+* Bio
+
+---
+
+### Q.6 What is a repository in GitHub?
+
+**Answer:**
+
+A **repository (repo)** is a storage location on GitHub that contains a project's files, folders, code, documentation, and version history.
+
+---
+
+### Q.7 What is the difference between a public and a private repository?
+
+**Answer:**
+
+| Public Repository                  | Private Repository                              |
+| ---------------------------------- | ----------------------------------------------- |
+| Anyone can view it.                | Only authorized users can access it.            |
+| Suitable for open-source projects. | Suitable for personal or confidential projects. |
+| Visible to everyone.               | Hidden from the public.                         |
+
+---
+
+### Q.8 What are the essential steps to create a new repository on GitHub?
+
+**Answer:**
+
+1. Sign in to GitHub.
+2. Click **New Repository**.
+3. Enter the repository name.
+4. Add a description (optional).
+5. Choose **Public** or **Private**.
+6. (Optional) Initialize with a README file.
+7. Click **Create Repository**.
+
+---
+
+### Q.9 What does the `git push` command do?
+
+**Answer:**
+
+The `git push` command uploads local commits from your computer to the remote GitHub repository.
+
+Example:
+
+```bash
+git push origin main
+```
+
+---
+
+### Q.10 Why is it important to connect a local repository with a remote one before pushing code?
+
+**Answer:**
+
+Connecting a local repository with a remote repository allows Git to know where to upload the project files. Without this connection, the `git push` command cannot send the code to GitHub.
+
+---
+
+### Q.11 What is the purpose of the `git pull` command, and how does it differ from `git fetch`?
+
+**Answer:**
+
+* **`git pull`** downloads the latest changes from the remote repository and automatically merges them into the local repository.
+* **`git fetch`** only downloads the latest changes but does **not** merge them. You can review the changes before merging.
+
+**Difference:**
+
+| `git pull`                                  | `git fetch`                         |
+| ------------------------------------------- | ----------------------------------- |
+| Downloads and merges changes automatically. | Downloads changes only.             |
+| Updates the local branch immediately.       | Requires manual merge later.        |
+| Easier for regular updates.                 | Better for reviewing changes first. |
+
+These answers are concise and suitable for lab viva, assignments, and university exams.
