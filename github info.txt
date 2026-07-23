@@ -1,0 +1,130 @@
+Step 2: Verify Installation
+
+Open Command Prompt or PowerShell and type:
+
+git --version
+git version 2.50.1.windows.1
+
+
+Step 3: Configure Git
+git config --global user.name "Mansi Panchal"
+git config --global user.email "mansi@example.com"
+
+Step 4: Check Configuration
+git config --list
+
+Q.3 Create a GitHub Repository
+Step 1
+
+Login to GitHub.
+
+Step 2
+
+Click New Repository.
+
+Step 3
+
+Enter:
+
+Repository Name:
+my-first-repo
+Description:
+My First GitHub Repository
+
+Choose:
+
+Public ✅
+or
+Private ✅
+Step 4
+
+✔ Tick
+
+Add a README file
+Step 5
+
+Click
+
+Create Repository
+
+Repository is now created successfully.
+
+Q.4 Push Local Project to GitHub
+
+Open Terminal inside your project folder.
+
+Initialize Git
+git init
+Add all files
+git add .
+Commit
+git commit -m "Initial Commit"
+Connect GitHub Repository
+git remote add origin https://github.com/USERNAME/my-first-repo.git
+
+Replace USERNAME with your GitHub username.
+
+Push Files
+git branch -M main
+git push -u origin main
+
+Refresh GitHub.
+
+Your project files will appear in the repository.
+
+Q.5 Pull from GitHub
+
+Clone the repository (if not already available):
+
+git clone https://github.com/USERNAME/my-first-repo.git
+
+Go inside the repository:
+
+cd my-first-repo
+
+Suppose someone updated the repository on GitHub.
+
+To download the latest changes:
+
+git pull origin main
+Verify
+
+Check the updated files:
+
+git status
+
+If everything is updated:
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Viva Questions (Important)
+
+Q1. How to check Git version?
+
+git --version
+
+Q2. Initialize a Git repository?
+
+git init
+
+Q3. Add all files?
+
+git add .
+
+Q4. Commit changes?
+
+git commit -m "message"
+
+Q5. Push code to GitHub?
+
+git push origin main
+
+Q6. Pull latest changes?
+
+git pull origin main
+
+Q7. Check Git configuration?
+
+git config --list
