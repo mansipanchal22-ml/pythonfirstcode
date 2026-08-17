@@ -54,8 +54,9 @@ for student in students:
 
 
 #-Sort the list of students by score (descending).
+students = students[::-1]
 
-#aa baki kai method use krvani aama?
+print(student)
 
 #-Find the student with the highest score.
 highest = students[0]
